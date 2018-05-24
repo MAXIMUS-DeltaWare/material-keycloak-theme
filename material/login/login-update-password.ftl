@@ -1,9 +1,9 @@
 <#import "template.ftl" as layout>
 <@layout.registrationLayout displayInfo=true; section>
     <#if section = "title">
-        ${msg("updatePasswordTitle")}
+        ${msg("updatePasswordTitle")?no_esc}
     <#elseif section = "header">
-        ${msg("updatePasswordTitle")}
+        ${msg("updatePasswordTitle")?no_esc}
     <#elseif section = "form">
         <form id="kc-passwd-update-form" class="form update-password ${properties.kcFormClass!}" action="${url.loginAction}" method="post">
             <input type="text" readonly value="this is not a login form" style="display: none;">

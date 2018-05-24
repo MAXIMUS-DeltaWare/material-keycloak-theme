@@ -76,15 +76,15 @@
 .alert-warning .alert-link {
     color: #581e0c;
 }
-.alert-danger {
+.alert-danger, .alert-error {
     color: #7f231c;
     background-color: #fdd9d7;
     border-color: #fccac7;
 }
-.alert-danger hr {
+.alert-danger hr, .alert-error hr {
     border-top-color: #fbb3af;
 }
-.alert-danger .alert-link {
+.alert-danger .alert-link, .alert-error .alert-link {
     color: #551713;
 }
 .alert-light {

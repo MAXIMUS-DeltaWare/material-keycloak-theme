@@ -2,7 +2,7 @@
 <@layout.registrationLayout displayInfo=social.displayInfo; section>
 
     <#if section = "title">
-        ${msg("loginTitle",(realm.displayName!''))}
+        ${msg("loginTitle",(realm.displayName!''))?no_esc}
     <#elseif section = "header">
 	<div class="title">
             ${msg("loginTitleHtml",(realm.displayNameHtml!''))?no_esc}
