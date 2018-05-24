@@ -19,7 +19,7 @@ window.onload = function() {
         document.querySelector('.language-picker .mdc-select')
     );
 
-    select.listen('change', () => {
+    select.listen('change', function() {
         var redirectUrl = document.querySelector('#language-picker-dropdown')
             .value;
         window.location.href = redirectUrl;
